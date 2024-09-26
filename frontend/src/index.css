@@ -1,0 +1,524 @@
+/* Footer.css */
+.footer {
+    background-color: #282c34; /* Dark background color */
+    padding: 10px 0; /* Padding for top and bottom */
+    text-align: center; /* Center the text */
+    position: fixed; /* Make the footer stick to the bottom */
+    bottom: 0;
+    width: 100%;
+  }
+  
+  .footer-text {
+    color: white; /* White text color */
+    font-size: 16px; /* Adjust the font size */
+    margin: 0; /* Remove default margin */
+  }
+/* Header.css */
+.header {
+    background-color: #282c34; /* Dark background color */
+    padding: 20px; /* Padding for the header */
+    display: flex; /* Flexbox for aligning items */
+    justify-content: space-between; /* Space between logo and nav links */
+    align-items: center; /* Center items vertically */
+  }
+  
+  .logo {
+    color: #61dafb; /* Light blue color for the logo */
+    font-size: 24px; /* Adjust the font size */
+    font-weight: bold; /* Bold text */
+    margin: 0; /* Remove default margin */
+  }
+  
+  .nav {
+    display: flex; /* Flexbox for nav links */
+    gap: 20px; /* Space between each link */
+  }
+  
+  .nav-link {
+    color: white; /* White text color for links */
+    text-decoration: none; /* Remove underline */
+    font-size: 18px; /* Adjust font size for links */
+    transition: color 0.3s ease; /* Smooth color transition */
+  }
+  
+  .nav-link:hover {
+    color: #61dafb; /* Change color on hover */
+  }
+    
+
+  /* AllBlogs.css */
+.all-blogs-container {
+    max-width: 1200px; /* Limit the width of the container */
+    margin: 0 auto; /* Center the container */
+    padding: 20px; /* Add some padding around the container */
+  }
+  
+  h1 {
+    text-align: center; /* Center the title */
+    margin-bottom: 20px; /* Space below the title */
+    color: #333; /* Darker text color */
+  }
+  
+  .search-bar {
+    width: 100%; /* Full width input */
+    padding: 10px; /* Padding inside the input */
+    margin-bottom: 20px; /* Space below the input */
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 16px; /* Larger text */
+  }
+  
+  .blogs-list {
+    display: flex; /* Flexbox for layout */
+    flex-wrap: wrap; /* Wrap items to the next line if necessary */
+    gap: 20px; /* Space between blog items */
+    justify-content: space-between; /* Space items evenly */
+  }
+  
+  .blog-item {
+    background-color: #f9f9f9; /* Light background for each blog item */
+    border: 1px solid #ddd; /* Border around each blog item */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px; /* Padding inside each blog item */
+    width: calc(33% - 20px); /* 3 columns with space between */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+    transition: transform 0.3s ease; /* Smooth transition on hover */
+  }
+  
+  .blog-item h2 {
+    margin-top: 0; /* Remove top margin */
+    font-size: 24px; /* Larger font size for title */
+    color: #444; /* Darker title color */
+  }
+  
+  .blog-item p {
+    color: #666; /* Gray color for content */
+    line-height: 1.5; /* Space between lines */
+    margin-bottom: 15px; /* Space below the content */
+  }
+  
+  .read-more {
+    color: #61dafb; /* Link color */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Bold text for the link */
+    transition: color 0.3s ease; /* Smooth color transition */
+  }
+  
+  .read-more:hover {
+    color: #21a1f1; /* Darker link color on hover */
+  }
+  
+  .blog-item:hover {
+    transform: translateY(-5px); /* Lift up the blog item on hover */
+  }
+
+  /* BlogDetail.css */
+.blog-detail-container {
+    max-width: 800px; /* Limit the width of the container */
+    margin: 0 auto; /* Center the container */
+    padding: 20px; /* Add padding inside the container */
+  }
+  
+  .blog-detail-container h1 {
+    font-size: 36px; /* Larger title font size */
+    color: #333; /* Darker title color */
+    margin-bottom: 20px; /* Space below the title */
+  }
+  
+  .blog-detail-container p {
+    font-size: 18px; /* Larger content font size */
+    color: #555; /* Medium gray color for content */
+    line-height: 1.6; /* Space between lines */
+    margin-bottom: 30px; /* Space below the content */
+  }
+  
+  .blog-detail-container .like-dislike-buttons {
+    margin-bottom: 30px; /* Space below the like/dislike buttons */
+  }
+  
+  .blog-detail-container .like-dislike-buttons button {
+    background-color: #61dafb; /* Button background color */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px 20px; /* Padding inside the button */
+    font-size: 16px; /* Button text size */
+    color: white; /* Button text color */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth background-color transition */
+    margin-right: 10px; /* Space between buttons */
+  }
+  
+  .blog-detail-container .like-dislike-buttons button:hover {
+    background-color: #21a1f1; /* Darker background on hover */
+  }
+  
+  .blog-detail-container .comments-section {
+    margin-top: 40px; /* Space above the comments section */
+  }
+  
+  .blog-detail-container .comments-section h3 {
+    font-size: 24px; /* Larger font size for comments heading */
+    color: #333; /* Darker text color */
+    margin-bottom: 20px; /* Space below the comments heading */
+  }
+  
+  .blog-detail-container .comment {
+    background-color: #f9f9f9; /* Light background for each comment */
+    border: 1px solid #ddd; /* Border around each comment */
+    border-radius: 8px; /* Rounded corners */
+    padding: 15px; /* Padding inside each comment */
+    margin-bottom: 15px; /* Space between comments */
+  }
+  
+  .blog-detail-container .comment p {
+    margin: 5px 0; /* Space between lines inside the comment */
+    color: #555; /* Medium gray color for comment text */
+  }
+  
+  .blog-detail-container textarea {
+    width: 100%; /* Full width textarea */
+    padding: 10px; /* Padding inside the textarea */
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 5px; /* Rounded corners */
+    margin-bottom: 15px; /* Space below the textarea */
+    font-size: 16px; /* Larger text size */
+    resize: vertical; /* Allow vertical resizing */
+  }
+  
+  .blog-detail-container button.add-comment-button {
+    background-color: #61dafb; /* Button background color */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px 20px; /* Padding inside the button */
+    font-size: 16px; /* Button text size */
+    color: white; /* Button text color */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth background-color transition */
+  }
+  
+  .blog-detail-container button.add-comment-button:hover {
+    background-color: #21a1f1; /* Darker background on hover */
+  }
+
+  .blog-detail-actions button {
+    background-color: transparent;
+    color: #007bff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: color 0.3s;
+  }
+  
+  .blog-detail-actions button:hover {
+    color: #0056b3;
+  }
+  
+  .blog-detail-actions i {
+    font-size: 18px;
+  }
+  
+  /* Container for the create blog form */
+.create-blog-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #f7f7f7;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Title of the page */
+.create-blog-title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Styles for the message (success or error) */
+.create-blog-message {
+    text-align: center;
+    font-size: 1rem;
+    color: #d9534f; /* Error color */
+}
+
+/* Label styles */
+.create-blog-label {
+    display: block;
+    font-size: 1rem;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+/* Input styles */
+.create-blog-input,
+.create-blog-textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+/* Button styles */
+.create-blog-button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 1.2rem;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.create-blog-button:hover {
+    background-color: #0056b3;
+}
+
+/* Container for the login form */
+.login-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #f7f7f7;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Title of the login page */
+.login-title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Form styles */
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Input styles */
+.login-input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+/* Button styles */
+.login-button {
+    padding: 10px;
+    font-size: 1.2rem;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-button:hover {
+    background-color: #0056b3;
+}
+/* Container for My Blogs page */
+.my-blogs-container {
+    padding: 20px;
+}
+
+/* Title of the My Blogs page */
+.my-blogs-title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Message styling */
+.message {
+    color: green;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* List of blogs */
+.my-blogs-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Individual blog item */
+.blog-item {
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+/* Blog title styling */
+.blog-title {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+/* Blog content styling */
+.blog-content {
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+/* Button styling */
+.update-button,
+.delete-button {
+    padding: 10px;
+    font-size: 1rem;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-right: 10px;
+}
+
+.update-button {
+    background-color: #007bff;
+}
+
+.update-button:hover {
+    background-color: #0056b3;
+}
+
+.delete-button {
+    background-color: #dc3545;
+}
+
+.delete-button:hover {
+    background-color: #c82333;
+}
+
+/* Container for the Register page */
+.register-container {
+    padding: 20px;
+}
+
+/* Form container */
+.register-form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+/* Form input styling */
+.form-input {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+/* Submit button styling */
+.submit-button {
+    padding: 10px 15px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: #0056b3;
+}
+
+/* Container for the Update Blog page */
+.update-blog-container {
+    padding: 20px;
+}
+
+/* Title styling */
+.update-blog-title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Message styling */
+.update-blog-message {
+    color: #ff0000; /* Red color for error messages */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Form styling */
+.update-blog-form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+/* Label styling */
+.form-label {
+    display: block;
+    margin-bottom: 15px;
+}
+
+/* Input field styling */
+.form-input,
+.form-textarea {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+/* Textarea specific styling */
+.form-textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+/* Submit button styling */
+.submit-button {
+    padding: 10px 15px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: block;
+    width: 100%;
+}
+
+.submit-button:hover {
+    background-color: #0056b3;
+}
